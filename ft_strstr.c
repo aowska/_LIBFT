@@ -17,10 +17,12 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	const char	*h;
 	const char	*n;
 
-	h = haystack;
-	n = needle;
+	h = NULL;
+	n = NULL;
 	while (*haystack)
 	{
+		h = haystack;
+		n = needle;
 		while (*h == *n && *n)
 		{
 			h++;
